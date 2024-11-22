@@ -1,0 +1,128 @@
+/* Social Media Icons Styling */
+.social-media-wrapper {
+    width: 100%;
+}
+
+.social-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social-top li {
+    margin: 5px 10px;
+}
+
+.social-top a {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.social-top a:hover {
+    color: #fff;
+    background-color: #f57e37;
+    transform: translateY(-2px);
+}
+
+.social-top i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .social-media-wrapper {
+        margin-top: 15px;
+    }
+
+    .social-top {
+        justify-content: center;
+    }
+    
+    .col-md-2.col-sm-2.col-xs-12 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-media-wrapper {
+        margin: 10px 0;
+        padding: 10px 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .social-top {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .social-top li {
+        margin: 5px;
+        flex: 0 0 auto;
+    }
+
+    .social-top a {
+        padding: 10px 15px;
+        background-color: transparent;
+    }
+
+    .social-top i {
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .social-top .hidden-xs {
+        display: none;
+    }
+
+    /* Mobile Menu Adjustments */
+    .text-right.visible-xs {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #mobile_menu {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    #mobile_menu .fa-bars {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-wrapper {
+        padding: 5px 0;
+    }
+
+    .social-top {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .social-top li {
+        margin: 5px 2px;
+    }
+
+    .social-top a {
+        padding: 8px 10px;
+    }
+
+    .social-top i {
+        font-size: 20px;
+    }
+}
